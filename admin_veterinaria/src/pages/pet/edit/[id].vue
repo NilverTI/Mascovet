@@ -451,7 +451,7 @@ definePage({
             </VBtn>
 
             <VBtn color="primary" class="mb-4" @click="edit()">
-                Editar
+                Actualizar
             </VBtn>
         </VCardText>
     </div>

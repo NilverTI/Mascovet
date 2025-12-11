@@ -183,7 +183,7 @@ onMounted(() => {
       <VCardText class="pa-5">
         <div class="mb-6">
           <h4 class="text-h4 text-center mb-2">
-            Editar Usuario : {{ props.userSelected.name }}
+            Editar Staff : {{ props.userSelected.name }}
           </h4>
         </div>
 
@@ -213,7 +213,11 @@ onMounted(() => {
 
           <!-- Cumpleaños / Género / Rol -->
           <VCol cols="12" md="4">
-            <AppDateTimePicker v-model="form.birthday" label="Cumpleaños" placeholder="Seleccione fecha" />
+            <AppDateTimePicker v-model="form.birthday" label="Cumpleaños" placeholder="Seleccione fecha" view="year"
+              :view-years="true" :year-range="[1900, new Date().getFullYear()]" :min="new Date(1900, 0, 1)"
+              :max="new Date()" />
+
+
           </VCol>
 
           <VCol cols="12" md="4">

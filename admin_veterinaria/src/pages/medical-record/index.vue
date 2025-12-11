@@ -323,7 +323,8 @@ watch(search, query => {
             </VCol>
             
             <VCol cols="8">
-                <VCard title="Services Timeline">
+                <VCard 
+                    title="Historial Médico de: ()"> 
                     <VCardText>
                     <VTimeline
                         side="end"

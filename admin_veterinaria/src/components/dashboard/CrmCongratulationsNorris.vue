@@ -42,7 +42,7 @@ onMounted(() => {
           <strong>{{pet_most_payment_selected.pet_most_payments.name}}!</strong> <span class="text-high-emphasis">🎉</span>
         </h5>
         <div class="text-subtitle-1">
-         Mascota con mas gastos en nuestros servicios
+          Mascota con mas gastos en nuestros servicios
         </div>
       </div>
       <h4 class="text-h4 text-primary">
