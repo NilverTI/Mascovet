@@ -1,80 +1,202 @@
-# Sistema de Veterinaria --- Laravel 11, Vue 3, PostgreSQL, AWS SNS, Cron Jobs y Envío de SMS
+# Sistema de Veterinaria — Laravel 11, Vue 3, PostgreSQL, AWS SNS, Cron Jobs y Envío de SMS
 
-### Autor
-**[Nilver T.I](https://github.com/NilverTI\)**\
-[Redes:] (https://nilverti.bio.link/)
+## 👨‍💻 Autor
+**[Nilver T.I](https://github.com/NilverTI)**  
+🔗 **Redes:** https://nilverti.bio.link/
 
-### Descripción general
+---
 
-Este proyecto es un Sistema de Veterinaria desarrollado con **Laravel
-11** para el backend y **Vue 3** para el panel administrativo. Gestiona
-citas, vacunas, cirugías, disponibilidad de doctores, pagos,
-recordatorios por SMS, correos automáticos y despliegue en AWS usando
-PostgreSQL, JWT, SNS y Cron Jobs.
+## 📘 Descripción General
 
-## 🚀 Características
+Este proyecto es un **Sistema Integral de Veterinaria** desarrollado con **Laravel 11** (Backend) y **Vue 3** (Frontend Administrativo).  
 
--   Backend con Laravel 11
--   SPA con Vue 3
--   PostgreSQL
--   JWT
--   AWS SNS (SMS)
--   Cron Jobs
--   Roles y permisos
--   Exportación Excel
--   KPIs & Dashboard
--   Calendario completo
--   Historial médico
+El sistema permite gestionar de manera completa todo el proceso operativo de una clínica veterinaria:
 
-## 🛠 Instalación Backend
+✔ Reserva de citas médicas  
+✔ Gestión de vacunas  
+✔ Programación de cirugías  
+✔ Disponibilidad de veterinarios  
+✔ Pagos y facturación  
+✔ Envío de SMS mediante AWS SNS  
+✔ Correos automáticos  
+✔ Cron Jobs para ejecutar tareas programadas  
+✔ Panel administrativo moderno  
+✔ Dashboards con indicadores (KPIs)
 
-``` bash
+Ideal para proyectos personales, emprendimientos o implementación comercial para múltiples clientes.
+
+---
+
+# 🚀 Tecnologías Principales
+
+### **Backend — Laravel 11**
+- API REST escalable  
+- Seguridad con **JWT Tokens**  
+- Validación con **Middleware y Guards**  
+- Seeders & Factories  
+- Jobs & Queues  
+- Servicios integrados (SNS, Email, Storage, etc.)  
+
+### **Frontend — Vue 3 (SPA)**
+- Componentes reutilizables  
+- Rutas protegidas  
+- Composition API  
+- Axios para consumo de API  
+- Materialize como Framework UI  
+
+### **Base de Datos**
+- **PostgreSQL**  
+- Relaciones optimizadas  
+- Índices por campos de consulta  
+- Migraciones automatizadas  
+
+### **Servicios Externos**
+- **AWS SNS** para envío de SMS  
+- **AWS EC2** para deploy  
+- **AWS RDS PostgreSQL**  
+- **Certbot + NGINX** para HTTPS  
+
+---
+
+# 🧩 Funcionalidades Complejas del Sistema
+
+## 👩‍⚕️ Gestión de Veterinarios y Pacientes
+- Registro y administración de médicos veterinarios  
+- Perfiles completos de mascotas  
+- Historial clínico detallado  
+
+## 📅 Gestión de Citas, Vacunas y Cirugías
+- Programación avanzada con disponibilidad  
+- Calendarización visual  
+- Recordatorios por SMS y email  
+- Estados de proceso (pendiente, atendido, cancelado)  
+
+## 💳 Pagos
+- Control de ingresos por servicio  
+- Historial contable  
+- Filtrado avanzado por fechas y tipos  
+
+## 🔐 Roles y Permisos
+- Administrador  
+- Veterinario  
+- Recepcionista  
+- Cliente  
+- Personalizado por módulo  
+
+## 📊 Dashboard & KPIs
+- Citas por día / semana / mes  
+- Servicios más solicitados  
+- Ingresos totales  
+- Productividad de veterinarios  
+
+## 📤 Exportación
+- Exportar citas, vacunas y cirugías a Excel  
+- Filtros por fecha, veterinario, paciente o servicio  
+
+---
+
+# 🛠 Instalación Backend (Laravel 11)
+
+```bash
 composer install
 cp .env.example .env
 php artisan key:generate
+
+# Configurar PostgreSQL en .env
+
 php artisan migrate --seed
 php artisan serve
 ```
 
-## 🖥 Instalación Frontend
+---
 
-``` bash
+# 🖥 Instalación Frontend (Vue 3)
+
+```bash
 npm install
 npm run dev
 ```
 
-## 🔐 Autenticación JWT
+---
 
--   POST /api/auth/login\
--   Authorization: Bearer {token}
+# 🔐 Autenticación (JWT)
 
-## 📡 AWS SNS
+### Login
+```http
+POST /api/auth/login
+Content-Type: application/json
+```
 
-Configurar en `.env`:
+Respuesta:
+```json
+{
+  "token": "Bearer {jwt_token}"
+}
+```
 
-    AWS_ACCESS_KEY_ID=
-    AWS_SECRET_ACCESS_KEY=
-    AWS_REGION=us-east-1
-    AWS_SNS_SENDER_ID=Veterinaria
+### Rutas protegidas  
+Enviar encabezado:
 
-## ⏱ Cron Job
+```
+Authorization: Bearer {token}
+```
 
-    * * * * * php /ruta/artisan schedule:run >> /dev/null 2>&1
+---
 
-## 📤 Exportaciones
+# 📡 Configuración de AWS SNS (Envío de SMS)
 
--   Citas\
--   Vacunas\
--   Cirugías
+En **.env**
 
-## ☁️ Deploy AWS
+```
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=us-east-1
+AWS_SNS_SENDER_ID=Veterinaria
+```
 
-Incluye EC2, RDS, SNS, Certbot, NGINX.
+Uso en código:
+- Recordatorios automáticos  
+- Confirmaciones de citas  
+- Alertas a clientes  
 
-## 📦 Licencia
+---
 
-MIT
+# ⏱ Cron Jobs
 
-## 📞 Contacto
-**[Nilver T.I](https://github.com/NilverTI\)**\
-[Redes:] (https://nilverti.bio.link/)
+En el crontab del servidor:
+
+```
+* * * * * php /ruta/del/proyecto/artisan schedule:run >> /dev/null 2>&1
+```
+
+Permite:
+- Recordatorios automáticos  
+- Procesar colas  
+- Limpieza del sistema  
+
+---
+
+# ☁️ Deploy en AWS
+
+### Componentes usados:
+- EC2 (Servidor Ubuntu)
+- RDS PostgreSQL
+- SNS (SMS)
+- NGINX + Certbot (HTTPS)
+- Supervisor (Jobs & Queues)
+
+Incluye:
+- Configuración de firewall  
+- Deploy continuo con GitHub  
+- Entorno de producción optimizado  
+
+---
+
+# 📦 Licencia
+Este proyecto está bajo la licencia **MIT**.
+
+---
+
+# 📞 Contacto
+**[Nilver T.I](https://github.com/NilverTI)**  
+🔗 https://nilverti.bio.link/
