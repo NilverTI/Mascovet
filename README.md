@@ -1,10 +1,8 @@
 # Sistema de Veterinaria --- Laravel 11, Vue 3, PostgreSQL, AWS SNS, Cron Jobs y Envío de SMS
 
 ### Autor
-
-**Nilver T.I**\
-GitHub: https://github.com/NilverTI\
-Redes: https://nilverti.bio.link/
+**[Nilver T.I](https://github.com/NilverTI\)**\
+[Redes:] (https://nilverti.bio.link/)
 
 ### Descripción general
 
@@ -78,7 +76,5 @@ Incluye EC2, RDS, SNS, Certbot, NGINX.
 MIT
 
 ## 📞 Contacto
-
-**Nilver T.I**\
-GitHub: https://github.com/NilverTI\
-Redes: https://nilverti.bio.link/
+**[Nilver T.I](https://github.com/NilverTI\)**\
+[Redes:] (https://nilverti.bio.link/)
