@@ -218,6 +218,6 @@ Este proyecto está bajo la licencia **MIT**.
 
 💼 **Rol:** Programador Senior – Full Stack  
 🚀 **Responsabilidades:** Arquitectura, liderazgo técnico y toma de decisiones. 
-    **Dato estra:** Busca Novia (Sin traumas)
+👌 **Dato extra:** Busca Novia (Sin traumas)
 
 ### 404: CONEXIÓN INESTABLE 👾
