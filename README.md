@@ -197,7 +197,9 @@ Este proyecto está bajo la licencia **MIT**.
 🔗 **Redes:** https://nilverti.bio.link/
 
 **[Euler I. Goicochea F.](https://github.com/L1lboX)** 
+
 **[Diana P. Cajo V.](https://www.instagram.com/patricia.dx/)** 
+
 **[Stephany P. Cruz L.](https://www.instagram.com/stechi_24/)** 
 
 ## 👨‍💻 CEO
