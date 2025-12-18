@@ -106,7 +106,10 @@ onMounted(() => {
   <VCard color="primary">
     <VCarousel
       v-if="websiteAnalytics.length > 0"
-      :continuous="false"
+      :key="websiteAnalytics.length"
+      cycle
+      :interval="3000"
+      :continuous="true"
       :show-arrows="false"
       hide-delimiter-background
       delimiter-icon="ri-circle-fill"
@@ -119,7 +122,7 @@ onMounted(() => {
       >
         <VCardItem>
           <VCardTitle class="text-white">
-           {{ item.name }}
+            {{ item.name }}
           </VCardTitle>
           <VCardSubtitle class="text-white">
             Total Bruto: {{ item.income_bruto }} PEN
