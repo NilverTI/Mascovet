@@ -4,7 +4,7 @@
     <div class="d-flex align-center text-base">
       &copy;
       {{ new Date().getFullYear() }},
-        404: CONEXION INESTABLE
+        404: CONEXIÓN INESTABLE
     </div>
   </div>
 </template>

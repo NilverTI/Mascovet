@@ -50,7 +50,7 @@ onMounted(() => {
 <template>
   <VDialog
     :model-value="props.isDialogVisible"
-    max-width="750"
+    max-width="500"
     @update:model-value="dialogVisibleUpdate"
   >
     <VCard class="refer-and-earn-dialog pa-3 pa-sm-11">
@@ -64,7 +64,7 @@ onMounted(() => {
       <VCardText class="pa-5">
         <div class="mb-6">
           <h4 class="text-h4 text-center mb-2" v-if="user_selected">
-            Deleted Veterinarie : {{ user_selected.id }}
+            Eliminar Veterinario : {{ user_selected.id }}
           </h4>
           <!-- <p class="text-sm-body-1 text-center">
             Supported payment methods

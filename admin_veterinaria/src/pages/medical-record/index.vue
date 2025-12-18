@@ -324,7 +324,7 @@ watch(search, query => {
             
             <VCol cols="8">
                 <VCard 
-                    title="Historial Médico de: ()"> 
+                    :title="'Historial Médico de: ' + pet_selected.name + ' '" >
                     <VCardText>
                     <VTimeline
                         side="end"
@@ -334,7 +334,7 @@ watch(search, query => {
                         density="compact"
                     >
                         <template v-for="(historial_record, index) in historial_records" :key="index">
-                            
+                            B
                             <VTimelineItem
                                 size="x-small"
                                 dot-color="primary"
@@ -388,7 +388,7 @@ watch(search, query => {
                             </div>
     
                             <div class="app-timeline-text mt-3">
-                                La hora de la vacunación inicia @{{ historial_record.hour_start }} y termina @{{ historial_record.hour_end }}
+                                La hora de la vacunación inicia: {{ historial_record.hour_start }} y termina: {{ historial_record.hour_end }}
                                 <br>
                                 Costo : {{ historial_record.amount }} PEN
                                 <br>
@@ -465,3 +465,4 @@ watch(search, query => {
         </VRow>
     </div>
 </template>
+

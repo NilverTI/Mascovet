@@ -92,7 +92,7 @@ const store = async() => {
       <VCardText class="pa-5">
         <div class="mb-6">
           <h4 class="text-h4 text-center mb-2">
-            Add Role
+            Agregar Rol
           </h4>
           <!-- <p class="text-sm-body-1 text-center">
             Supported payment methods
