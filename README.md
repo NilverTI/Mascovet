@@ -217,6 +217,7 @@ Este proyecto está bajo la licencia **MIT**.
 📸 Instagram: [@bryan_clown_](https://www.instagram.com/bryan_clown_/)
 
 💼 **Rol:** Programador Senior – Full Stack  
-🚀 **Responsabilidades:** Arquitectura, liderazgo técnico y toma de decisiones. Buscsa Novia (Sin traumas)
+🚀 **Responsabilidades:** Arquitectura, liderazgo técnico y toma de decisiones. 
+    **Dato estra:** Busca Novia (Sin traumas)
 
 ### 404: CONEXIÓN INESTABLE 👾
