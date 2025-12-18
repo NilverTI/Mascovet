@@ -192,16 +192,31 @@ Este proyecto está bajo la licencia **MIT**.
 
 ---
 
-## 👨‍💻 AUTORES
-- **Nilver Tantalean I.** https://github.com/NilverTI 
-🔗 **Redes:** https://nilverti.bio.link/
+## 👨‍💻 Equipo del Proyecto
 
-- **Euler I. Goicochea F.** -->  https://github.com/L1lboX 
+### 🧑‍💻 Autores
 
-- **Diana P. Cajo V.**      -->  https://www.instagram.com/patricia.dx/
+- **Nilver Tantalean I.**  
+  🔗 GitHub: [@NilverTI](https://github.com/NilverTI)  
+  🌐 Redes: https://nilverti.bio.link/
 
-- **Stephany P. Cruz L.**   -->  https://www.instagram.com/stechi_24/ 
+- **Euler I. Goicochea F.**  
+  🔗 GitHub: [@L1lboX](https://github.com/L1lboX)
 
-## 👨‍💻 CEO
-**Bryan A. Millones M.**    -->  https://www.instagram.com/bryan_clown_/
- - Programador senior, Full stack, Busca novia (Sin Traumas).
+- **Diana P. Cajo V.**  
+  📸 Instagram: [@patricia.dx](https://www.instagram.com/patricia.dx/)
+
+- **Stephany P. Cruz L.**  
+  📸 Instagram: [@stechi_24](https://www.instagram.com/stechi_24/)
+
+---
+
+### 👔 CEO 
+
+**Bryan A. Millones M.**  
+📸 Instagram: [@bryan_clown_](https://www.instagram.com/bryan_clown_/)
+
+💼 **Rol:** Programador Senior – Full Stack  
+🚀 **Responsabilidades:** Arquitectura, liderazgo técnico y toma de decisiones. Buscsa Novia (Sin traumas)
+
+### 404: CONEXIÓN INESTABLE 👾
