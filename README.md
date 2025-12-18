@@ -193,15 +193,15 @@ Este proyecto está bajo la licencia **MIT**.
 ---
 
 ## 👨‍💻 AUTORES
-**[Nilver Tantalean I.](https://github.com/NilverTI)**  
+- **Nilver Tantalean I.** https://github.com/NilverTI 
 🔗 **Redes:** https://nilverti.bio.link/
 
-**Euler I. Goicochea F.** https://github.com/L1lboX 
+- **Euler I. Goicochea F.** -->  https://github.com/L1lboX 
 
-**Diana P. Cajo V.** https://www.instagram.com/patricia.dx/
+- **Diana P. Cajo V.**      -->  https://www.instagram.com/patricia.dx/
 
-**Stephany P. Cruz L.** https://www.instagram.com/stechi_24/ 
+- **Stephany P. Cruz L.**   -->  https://www.instagram.com/stechi_24/ 
 
 ## 👨‍💻 CEO
-**Bryan A. Millones M.** https://www.instagram.com/bryan_clown_/
+**Bryan A. Millones M.**    -->  https://www.instagram.com/bryan_clown_/
  - Programador senior, Full stack, Busca novia (Sin Traumas).
